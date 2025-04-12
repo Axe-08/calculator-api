@@ -11,6 +11,7 @@ public class CalculatorService {
         try {
             // Trim any whitespace
             expression = expression.trim();
+            expression = expression.replaceAll("\\s+", "");
 
             // Validate input
             if (expression.isEmpty()) {
