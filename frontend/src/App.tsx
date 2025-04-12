@@ -1,10 +1,18 @@
-import React from "react";
-import Calculator from "./components/Calculator/Calculator";
+import React from 'react';
+import Calculator from './components/Calculator';
 
 function App() {
   return (
     <div className="App">
-      <Calculator />
+      <header className="App-header">
+        <h1>React Calculator</h1>
+      </header>
+      <main>
+        <Calculator />
+      </main>
+      <footer>
+        <p>Using the Calculator API</p>
+      </footer>
     </div>
   );
 }
